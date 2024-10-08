@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <div class="container">
     <header>
         <h1>AI Poem Generator</h1>
     </header>
@@ -16,10 +17,11 @@
             placeholder="Enter the topic of the poem"
             autofocus
             required
-            autocomplete="off">
-            <input type="submit">
+            autocomplete="off"
+            class="searchBar">
+            <input type="submit" class="button">
         </form>
-        <div>
+        <div class="poem">
             hey
         </div>
     </main>
@@ -28,6 +30,7 @@
         and <a href="https://github.com/ivymelanin/AI-poem-generator">is opened-sourced on GitHub</a>
         and is <a href="https://mellifluous-kringle-837d91.netlify.app/">hosted on Netlify</a>
     </footer>
+    </div>
     <script src="src/index.js"></script>
 </body>
 </html>

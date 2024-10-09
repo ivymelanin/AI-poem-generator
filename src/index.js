@@ -12,7 +12,7 @@ function generatePoem(event) {
     let apiKey ="77e54fc3f3o315bb21050ac08t45b6af";
     let prompt = `Generate a poem about ${instructionInput.value}`;
     let context = "Write any famous or popular poem in two sentences and be short and clear ";
-    let apiUrl = `https://api.shecodes.io/ai/v1/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+    let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
     axios.get(apiUrl).then(poem);
 }

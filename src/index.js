@@ -11,9 +11,12 @@ function generatePoem(event) {
     let instructionInput = document.querySelector("#instructions");
     let apiKey ="77e54fc3f3o315bb21050ac08t45b6af";
     let prompt = `User instructions: Generate a poem about ${instructionInput.value}`;
-    let context = "Write any poem in two paragraphs and be short and clear. start every sentence in a new line ";
+    let context = "Write any poem in two paragraphs and be short and clear. start every new sentence in a new line ";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let poemElement = document.querySelector("#poem");
+    poemElement.classList.remove("hidden");
+    poemElement.innerHTML = `<div class="generating">⏳ Generating a French poem about ${instructionInput.value}</div>`;
     axios.get(apiUrl).then(poem);
 }
 

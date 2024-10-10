@@ -2,8 +2,8 @@ function poem(response) {
     new Typewriter("#poem", {
         strings: response.data.answer,
         autoStart: true,
-        delay: 1;
-        cursor: "";
+        delay: 1,
+        cursor: "",
       }); 
 }
 function generatePoem(event) {
